@@ -1,0 +1,73 @@
+,State,County,Cases,Deaths,Date_parsing
+0,Wisconsin,Adams,<20,<20,2020-04-30
+1,Wisconsin,Ashland,<20,0,2020-04-30
+2,Wisconsin,Barron,<20,0,2020-04-30
+3,Wisconsin,Bayfield,<20,<20,2020-04-30
+4,Wisconsin,Brown,971,<20,2020-04-30
+5,Wisconsin,Buffalo,<20,<20,2020-04-30
+6,Wisconsin,Burnett,0,0,2020-04-30
+7,Wisconsin,Calumet,<20,0,2020-04-30
+8,Wisconsin,Chippewa,21,0,2020-04-30
+9,Wisconsin,Clark,20,<20,2020-04-30
+10,Wisconsin,Columbia,27,<20,2020-04-30
+11,Wisconsin,Crawford,<20,0,2020-04-30
+12,Wisconsin,Dane,424,22,2020-04-30
+13,Wisconsin,Dodge,33,<20,2020-04-30
+14,Wisconsin,Door,<20,<20,2020-04-30
+15,Wisconsin,Douglas,<20,0,2020-04-30
+16,Wisconsin,Dunn,<20,0,2020-04-30
+17,Wisconsin,Eau Claire,27,0,2020-04-30
+18,Wisconsin,Florence,<20,0,2020-04-30
+19,Wisconsin,Fond du Lac,69,<20,2020-04-30
+20,Wisconsin,Forest,0,0,2020-04-30
+21,Wisconsin,Grant,35,<20,2020-04-30
+22,Wisconsin,Green,<20,0,2020-04-30
+23,Wisconsin,Green Lake,<20,0,2020-04-30
+24,Wisconsin,Iowa,<20,0,2020-04-30
+25,Wisconsin,Iron,<20,<20,2020-04-30
+26,Wisconsin,Jackson,<20,<20,2020-04-30
+27,Wisconsin,Jefferson,45,0,2020-04-30
+28,Wisconsin,Juneau,<20,<20,2020-04-30
+29,Wisconsin,Kenosha,363,<20,2020-04-30
+30,Wisconsin,Kewaunee,<20,<20,2020-04-30
+31,Wisconsin,La Crosse,27,0,2020-04-30
+32,Wisconsin,Lafayette,<20,0,2020-04-30
+33,Wisconsin,Langlade,0,0,2020-04-30
+34,Wisconsin,Lincoln,0,0,2020-04-30
+35,Wisconsin,Manitowoc,<20,<20,2020-04-30
+36,Wisconsin,Marathon,<20,<20,2020-04-30
+37,Wisconsin,Marinette,<20,<20,2020-04-30
+38,Wisconsin,Marquette,<20,<20,2020-04-30
+39,Wisconsin,Menominee,<20,0,2020-04-30
+40,Wisconsin,Milwaukee,2 815,177,2020-04-30
+41,Wisconsin,Monroe,<20,<20,2020-04-30
+42,Wisconsin,Oconto,<20,0,2020-04-30
+43,Wisconsin,Oneida,<20,0,2020-04-30
+44,Wisconsin,Outagamie,54,<20,2020-04-30
+45,Wisconsin,Ozaukee,86,<20,2020-04-30
+46,Wisconsin,Pepin,0,0,2020-04-30
+47,Wisconsin,Pierce,<20,0,2020-04-30
+48,Wisconsin,Polk,<20,0,2020-04-30
+49,Wisconsin,Portage,<20,0,2020-04-30
+50,Wisconsin,Price,<20,0,2020-04-30
+51,Wisconsin,Racine,317,<20,2020-04-30
+52,Wisconsin,Richland,<20,<20,2020-04-30
+53,Wisconsin,Rock,183,<20,2020-04-30
+54,Wisconsin,Rusk,<20,0,2020-04-30
+55,Wisconsin,St. Croix,<20,0,2020-04-30
+56,Wisconsin,Sauk,44,<20,2020-04-30
+57,Wisconsin,Sawyer,<20,0,2020-04-30
+58,Wisconsin,Shawano,<20,0,2020-04-30
+59,Wisconsin,Sheboygan,46,<20,2020-04-30
+60,Wisconsin,Taylor,0,0,2020-04-30
+61,Wisconsin,Trempealeau,<20,0,2020-04-30
+62,Wisconsin,Vernon,<20,0,2020-04-30
+63,Wisconsin,Vilas,<20,0,2020-04-30
+64,Wisconsin,Walworth,156,<20,2020-04-30
+65,Wisconsin,Washburn,<20,0,2020-04-30
+66,Wisconsin,Washington,97,<20,2020-04-30
+67,Wisconsin,Waukesha,329,<20,2020-04-30
+68,Wisconsin,Waupaca,<20,<20,2020-04-30
+69,Wisconsin,Waushara,<20,0,2020-04-30
+70,Wisconsin,Winnebago,51,<20,2020-04-30
+71,Wisconsin,Wood,<20,0,2020-04-30
