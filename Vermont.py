@@ -1,36 +1,34 @@
-import selenium
+import selenium #доделать
 from selenium import webdriver
 from selenium.webdriver import Chrome
 from selenium.webdriver.chrome.options import Options
 import time
 # import data
+# import xlrd
 import pandas as pd
 import os
 import datetime
 time_of_parsing=datetime.datetime.today().strftime('%Y-%m-%d')
-County_cases=[]
-Death_by_county=[]
-State_cases=[]
-Death_by_state=[]
+Data=[]
 County=[]
+Cases=[]
+Deaths=[]
 options = Options()
 options.add_argument('--headless')
 # options.add_argument("download.default_directory=/Users/giova/Documents/Data Mining/COVID-19")#change path what you want
-driver = selenium.webdriver.Chrome('D:\chromedriver', options=options)
-driver.get('https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/county-map.html?state=VT')
-time.sleep(5)
-# table=driver.find_element_by_class_name('allborders rowbackgrounds')
-tbody=driver.find_element_by_tag_name('tbody')
-tr=tbody.find_elements_by_tag_name('tr')
-for i in tr:
-    County.append(i.find_elements_by_tag_name('td')[0].text)
-    County_cases.append((i.find_elements_by_tag_name('td')[1].text))
-    Death_by_county.append((i.find_elements_by_tag_name('td')[3].text))
+driver = webdriver.Chrome(executable_path='D:\chromedriver',
+                                  options=options)
+driver.get('https://vcgi.maps.arcgis.com/apps/opsdashboard/index.html#/6128a0bc9ae14e98a686b635001ef7a7')
+time.sleep(20)
+tbody=driver.find_elements_by_class_name('feature-list')[0]
+table=tbody.find_elements_by_tag_name('p')
+for data in table:
+    County.append(data.find_elements_by_tag_name('strong')[0].text)
 data= pd.DataFrame({
-    'State':'Vermont',
-    'County':County,
-    'Cases': County_cases,
-    'Deaths':Death_by_county,
-    'Date_parsing': time_of_parsing
+'State':'Vermont',
+'County':County[0::5],
+'Cases': County[1::5],
+'Deaths':County[3::5],
+'Date_parsing': time_of_parsing
 })
-data.to_csv('D:\Vermont.csv')
+data.to_csv('Vermont.csv')
