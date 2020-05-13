@@ -1,0 +1,27 @@
+,State,County,Cases,Deaths,Date_parsing
+0,Maryland,County,Cases,Deaths,2020-05-13
+1,Maryland,Allegany,149,(13),2020-05-13
+2,Maryland,Anne Arundel,"2,596",(123),2020-05-13
+3,Maryland,Baltimore City,"3,476",(177),2020-05-13
+4,Maryland,Baltimore County,"4,160",(203),2020-05-13
+5,Maryland,Calvert,214,(12),2020-05-13
+6,Maryland,Caroline,177,,2020-05-13
+7,Maryland,Carroll,595,(61),2020-05-13
+8,Maryland,Cecil,271,(15),2020-05-13
+9,Maryland,Charles,778,(56),2020-05-13
+10,Maryland,Dorchester,102,(2),2020-05-13
+11,Maryland,Frederick,"1,302",(74),2020-05-13
+12,Maryland,Garrett,6,,2020-05-13
+13,Maryland,Harford,629,(24),2020-05-13
+14,Maryland,Howard,"1,258",(36),2020-05-13
+15,Maryland,Kent,123,(13),2020-05-13
+16,Maryland,Montgomery,"7,283",(386),2020-05-13
+17,Maryland,Prince George's,"10,072",(370),2020-05-13
+18,Maryland,Queen Anne's,104,(9),2020-05-13
+19,Maryland,St. Mary's,254,(9),2020-05-13
+20,Maryland,Somerset,51,,2020-05-13
+21,Maryland,Talbot,62,(1),2020-05-13
+22,Maryland,Washington,287,(9),2020-05-13
+23,Maryland,Wicomico,738,(17),2020-05-13
+24,Maryland,Worcester,125,(3),2020-05-13
+25,Maryland,Data not available,,(81),2020-05-13
