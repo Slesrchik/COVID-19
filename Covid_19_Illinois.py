@@ -1,38 +1,22 @@
-import selenium
-from selenium import webdriver
-from selenium.webdriver import Chrome
-from selenium.webdriver.chrome.options import Options
-import time
-# import data
-import pandas as pd
-import os
+import requests
 import datetime
-time_of_parsing=datetime.datetime.today().strftime('%Y-%m-%d')
-County_cases=[]
-Death_by_county=[]
-State_cases=[]
-Death_by_state=[]
-County=[]
-options = Options()
-options.add_argument('--headless')
-# options.add_argument("download.default_directory=/Users/giova/Documents/Data Mining/COVID-19")#change path what you want
-driver = selenium.webdriver.Chrome('D:\chromedriver', options=options)
-driver.get('https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/county-map.html?state=IL')
-time.sleep(5)
-# table=driver.find_element_by_class_name('allborders rowbackgrounds')
-tbody=driver.find_element_by_tag_name('tbody')
-tr=tbody.find_elements_by_tag_name('tr')
-for i in tr:
-    County.append(i.find_elements_by_tag_name('td')[0].text)
-    County_cases.append((i.find_elements_by_tag_name('td')[1].text))
-    Death_by_county.append((i.find_elements_by_tag_name('td')[3].text))
-data= pd.DataFrame({
-    'State':'Illinois',
-    'County':County,
-    'Cases': County_cases,
-    'Deaths':Death_by_county,
-    'Date_parsing': time_of_parsing
+import pandas as pd
+County = []
+Cases = []
+Deaths = []
+date_parsing = datetime.datetime.today().strftime('%Y-%m-%d')
+for websource in requests.get('http://dph.illinois.gov/sitefiles/COVIDHistoricalTestResults.json?nocache=1').json()[
+    'characteristics_by_county']['values']:
+    County.append(websource['County'])
+    Cases.append(websource['confirmed_cases'])
+    Deaths.append(websource['deaths'])
+data = pd.DataFrame({
+    'State': 'Illinois',
+    'County': County,
+    'Cases': Cases,
+    'Deaths': Deaths,
+    'Date_parsing': date_parsing
 })
-data.to_csv('D:\Illinois.csv')
+data.to_csv('Illinois.csv')
 
 
