@@ -21,7 +21,7 @@ driver = selenium.webdriver.Chrome('D:\chromedriver', options=options)
 
 driver.get('https://coronavirus.iowa.gov/pages/access')
 time.sleep(20)
-tbody=driver.find_elements_by_tag_name('tbody')[0]
+tbody=driver.find_elements_by_tag_name('tbody')[1]
 
 table=tbody.find_elements_by_tag_name('tr')
 for data in table:
