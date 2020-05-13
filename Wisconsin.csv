@@ -1,0 +1,74 @@
+,State,County,New Cases,Deaths,Date_parsing
+0,Wisconsin,Adams,4,1,2020-05-13
+1,Wisconsin,Ashland,2,0,2020-05-13
+2,Wisconsin,Barron,11,0,2020-05-13
+3,Wisconsin,Bayfield,3,1,2020-05-13
+4,Wisconsin,Brown,"1,958",20,2020-05-13
+5,Wisconsin,Buffalo,5,1,2020-05-13
+6,Wisconsin,Burnett,0,0,2020-05-13
+7,Wisconsin,Calumet,43,1,2020-05-13
+8,Wisconsin,Chippewa,31,0,2020-05-13
+9,Wisconsin,Clark,24,4,2020-05-13
+10,Wisconsin,Columbia,34,1,2020-05-13
+11,Wisconsin,Crawford,17,0,2020-05-13
+12,Wisconsin,Dane,477,22,2020-05-13
+13,Wisconsin,Dodge,75,1,2020-05-13
+14,Wisconsin,Door,22,3,2020-05-13
+15,Wisconsin,Douglas,11,0,2020-05-13
+16,Wisconsin,Dunn,14,0,2020-05-13
+17,Wisconsin,Eau Claire,60,0,2020-05-13
+18,Wisconsin,Florence,2,0,2020-05-13
+19,Wisconsin,Fond du Lac,108,3,2020-05-13
+20,Wisconsin,Forest,4,0,2020-05-13
+21,Wisconsin,Grant,69,9,2020-05-13
+22,Wisconsin,Green,34,0,2020-05-13
+23,Wisconsin,Green Lake,8,0,2020-05-13
+24,Wisconsin,Iowa,10,0,2020-05-13
+25,Wisconsin,Iron,2,1,2020-05-13
+26,Wisconsin,Jackson,14,1,2020-05-13
+27,Wisconsin,Jefferson,52,2,2020-05-13
+28,Wisconsin,Juneau,21,1,2020-05-13
+29,Wisconsin,Kenosha,716,16,2020-05-13
+30,Wisconsin,Kewaunee,29,1,2020-05-13
+31,Wisconsin,La Crosse,34,0,2020-05-13
+32,Wisconsin,Lafayette,13,0,2020-05-13
+33,Wisconsin,Langlade,0,0,2020-05-13
+34,Wisconsin,Lincoln,1,0,2020-05-13
+35,Wisconsin,Manitowoc,20,1,2020-05-13
+36,Wisconsin,Marathon,25,1,2020-05-13
+37,Wisconsin,Marinette,21,1,2020-05-13
+38,Wisconsin,Marquette,3,1,2020-05-13
+39,Wisconsin,Menominee,2,0,2020-05-13
+40,Wisconsin,Milwaukee,"4,069",235,2020-05-13
+41,Wisconsin,Monroe,15,1,2020-05-13
+42,Wisconsin,Oconto,28,0,2020-05-13
+43,Wisconsin,Oneida,7,0,2020-05-13
+44,Wisconsin,Outagamie,117,2,2020-05-13
+45,Wisconsin,Ozaukee,107,10,2020-05-13
+46,Wisconsin,Pepin,0,0,2020-05-13
+47,Wisconsin,Pierce,14,0,2020-05-13
+48,Wisconsin,Polk,5,0,2020-05-13
+49,Wisconsin,Portage,7,0,2020-05-13
+50,Wisconsin,Price,1,0,2020-05-13
+51,Wisconsin,Racine,763,17,2020-05-13
+52,Wisconsin,Richland,13,2,2020-05-13
+53,Wisconsin,Rock,369,13,2020-05-13
+54,Wisconsin,Rusk,4,0,2020-05-13
+55,Wisconsin,Sauk,73,3,2020-05-13
+56,Wisconsin,Sawyer,4,0,2020-05-13
+57,Wisconsin,Shawano,25,0,2020-05-13
+58,Wisconsin,Sheboygan,66,2,2020-05-13
+59,Wisconsin,St. Croix,31,0,2020-05-13
+60,Wisconsin,Taylor,0,0,2020-05-13
+61,Wisconsin,Trempealeau,6,0,2020-05-13
+62,Wisconsin,Vernon,4,0,2020-05-13
+63,Wisconsin,Vilas,4,0,2020-05-13
+64,Wisconsin,Walworth,244,11,2020-05-13
+65,Wisconsin,Washburn,1,0,2020-05-13
+66,Wisconsin,Washington,119,4,2020-05-13
+67,Wisconsin,Waukesha,414,23,2020-05-13
+68,Wisconsin,Waupaca,13,1,2020-05-13
+69,Wisconsin,Waushara,4,0,2020-05-13
+70,Wisconsin,Winnebago,101,1,2020-05-13
+71,Wisconsin,Wood,4,0,2020-05-13
+72,Wisconsin,Total,"10,611",418,2020-05-13
