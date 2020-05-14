@@ -1,36 +1,23 @@
-import selenium
-from selenium import webdriver
-from selenium.webdriver import Chrome
-from selenium.webdriver.chrome.options import Options
-import time
-# import data
-import pandas as pd
-import os
+import requests
 import datetime
-time_of_parsing=datetime.datetime.today().strftime('%Y-%m-%d')
-County_cases=[]
-Death_by_county=[]
-State_cases=[]
-Death_by_state=[]
-County=[]
-options = Options()
-options.add_argument('--headless')
-# options.add_argument("download.default_directory=/Users/giova/Documents/Data Mining/COVID-19")#change path what you want
-driver = selenium.webdriver.Chrome('D:\chromedriver', options=options)
-driver.get('https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/county-map.html?state=LA')
-time.sleep(5)
-# table=driver.find_element_by_class_name('allborders rowbackgrounds')
-tbody=driver.find_element_by_tag_name('tbody')
-tr=tbody.find_elements_by_tag_name('tr')
-for i in tr:
-    County.append(i.find_elements_by_tag_name('td')[0].text)
-    County_cases.append((i.find_elements_by_tag_name('td')[1].text))
-    Death_by_county.append((i.find_elements_by_tag_name('td')[3].text))
-data= pd.DataFrame({
-    'State':'Louisiana',
-    'County':County,
-    'Cases': County_cases,
-    'Deaths':Death_by_county,
-    'Date_parsing': time_of_parsing
+import pandas as pd
+Dictionary = []
+County = []
+Cases = []
+Deaths = []
+date_parsing = datetime.datetime.today().strftime('%Y-%m-%d')
+for websource in requests.get('https://services5.arcgis.com/O5K6bb5dZVZcTo5M/arcgis/rest/services/Cases_by_Parish/FeatureServer/0/query?f=json&where=1%3D1&returnGeometry=true&spatialRel=esriSpatialRelIntersects&outFields=LDHH%2CParish%2CCases%2CDeaths%2CCommercial_Tests%2CState_Tests%2CFID%2CColumn10%2CColumn11&orderByFields=FID%20ASC&outSR=102100').json()[
+    'features']:
+    Dictionary.append(websource['attributes'])
+for web in Dictionary:
+    County.append(web['Parish'])
+    Cases.append(web['Cases'])
+    Deaths.append(web['Deaths'])
+data = pd.DataFrame({
+    'State': 'Illinois',
+    'County': County,
+    'Cases':  Cases,
+    'Deaths': Deaths,
+    'Date_parsing': date_parsing
 })
-data.to_csv('D:\Louisiana.csv')
+data.to_csv('Louisana.csv')
