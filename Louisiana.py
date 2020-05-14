@@ -14,7 +14,7 @@ for web in Dictionary:
     Cases.append(web['Cases'])
     Deaths.append(web['Deaths'])
 data = pd.DataFrame({
-    'State': 'Illinois',
+    'State': 'Louisana',
     'County': County,
     'Cases':  Cases,
     'Deaths': Deaths,
