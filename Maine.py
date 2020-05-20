@@ -5,5 +5,5 @@ d = pd.read_html ("https://www.maine.gov/dhhs/mecdc/infectious-disease/epi/airbo
 df = d[2]
 df.insert(1,'State','Maine')
 df.insert(6,'Date',date_parsing)
-
-df.to_csv('D:\Maine.csv')
+data = df[['State','Cumulative COVID‑19 Case Counts by County', 'Cumulative COVID‑19 Case Counts by County.1', 'Cumulative COVID‑19 Case Counts by County.4', 'Date']]
+data.to_csv('D:\Maine.csv')
